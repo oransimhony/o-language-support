@@ -3,6 +3,7 @@
     "displayName": "O Language Support",
     "description": "Syntax Highlighter for the O Programming Language",
     "version": "0.0.1",
+    "publisher": "oransimhony",
     "engines": {
         "vscode": "^1.35.0"
     },
