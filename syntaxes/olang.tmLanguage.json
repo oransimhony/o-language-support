@@ -37,13 +37,19 @@
 		},
 		{
 			"include": "#modulo-operator"
+		},
+		{
+			"include": "#comparison-operator"
+		},
+		{
+			"include": "#condition-operator"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.olang",
-				"match": "\\b(if|while|for|return|let|print|else|fn|lambda|and|or)\\b"
+				"match": "\\b(if|while|for|return|let|print|else|fn|lambda)\\b"
 			}]
 		},
 		"strings": {
@@ -79,7 +85,7 @@
 		},
 		"plus-operator": {
 			"name": "keyword.operator.plus.olang",
-			"match": "(\\s*)+"
+			"match": "(\\s*)\\+"
 		},
 		"minus-operator": {
 			"name": "keyword.operator.minus.olang",
@@ -96,6 +102,14 @@
 		"modulo-operator": {
 			"name": "keyword.operator.modulo.olang",
 			"match": "(\\s*)%"
+		},
+		"comparison-operator": {
+			"name": "keyword.operator.comparison.olang",
+			"match": "==|!=|<=|>=|<|>"
+		},
+		"condition-operator": {
+			"name": "keyword.operator.condition.olang",
+			"match": "!|([^A-Za-z0-9]|\\b)and([^A-Za-z0-9]|\\b)|([^A-Za-z0-9])or([^A-Za-z0-9])"
 		}
 	},
 	"scopeName": "source.olang"
