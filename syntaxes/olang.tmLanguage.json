@@ -7,13 +7,43 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#assignment-operator"
+		},
+		{
+			"include": "#numeric-literal"
+		},
+		{
+			"include": "#boolean-literal"
+		},
+		{
+			"include": "#nil-literal"
+		},
+		{
+			"include": "#arrow-operator"
+		},
+		{
+			"include": "#plus-operator"
+		},
+		{
+			"include": "#minus-operator"
+		},
+		{
+			"include": "#star-operator"
+		},
+		{
+			"include": "#slash-operator"
+		},
+		{
+			"include": "#modulo-operator"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.olang",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(if|while|for|return|let|print|else|fn|lambda|and|or)\\b"
 			}]
 		},
 		"strings": {
@@ -26,6 +56,46 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"assignment-operator": {
+			"name": "keyword.operator.assignment.olang",
+			"match": "="
+		},
+		"numeric-literal": {
+			"name": "constant.numeric.olang",
+			"match": "\\s*([0-9]+(\\.[0-9]+)?)"
+		},
+		"boolean-literal": {
+			"name": "constant.language.boolean.olang",
+			"match": "(\\s*)(true|false)\\b"
+		},
+		"nil-literal": {
+			"name": "constant.language.nil.olang",
+			"match": "(\\s*)nil\\b"
+		},
+		"arrow-operator": {
+			"name": "keyword.operator.arrow.olang",
+			"match": "(\\s*)=>"
+		},
+		"plus-operator": {
+			"name": "keyword.operator.plus.olang",
+			"match": "(\\s*)+"
+		},
+		"minus-operator": {
+			"name": "keyword.operator.minus.olang",
+			"match": "(\\s*)-"
+		},
+		"star-operator": {
+			"name": "keyword.operator.star.olang",
+			"match": "(\\s*)\\*"
+		},
+		"slash-operator": {
+			"name": "keyword.operator.slash.olang",
+			"match": "(\\s*)/"
+		},
+		"modulo-operator": {
+			"name": "keyword.operator.modulo.olang",
+			"match": "(\\s*)%"
 		}
 	},
 	"scopeName": "source.olang"
