@@ -49,7 +49,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.olang",
-				"match": "\\b(if|while|for|return|let|print|else|fn|lambda)\\b"
+				"match": "\\b(if|while|for|return|let|print|else|fn|lambda|import)\\b"
 			}]
 		},
 		"strings": {
