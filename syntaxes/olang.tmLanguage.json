@@ -3,6 +3,9 @@
 	"name": "O",
 	"patterns": [
 		{
+			"include": "#comment"
+		},
+		{
 			"include": "#keywords"
 		},
 		{
@@ -43,13 +46,22 @@
 		},
 		{
 			"include": "#condition-operator"
+		},
+		{
+			"include": "#pipe-operator"
+		},
+		{
+			"include": "#types"
+		},
+		{
+			"include": "#other-operators"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.olang",
-				"match": "\\b(if|while|for|return|let|print|else|fn|lambda|import)\\b"
+				"match": "\\b(if|while|for|return|let|print|else|fn|lambda|import|struct|typeof)\\b"
 			}]
 		},
 		"strings": {
@@ -110,6 +122,22 @@
 		"condition-operator": {
 			"name": "keyword.operator.condition.olang",
 			"match": "!|([^A-Za-z0-9]|\\b)and([^A-Za-z0-9]|\\b)|([^A-Za-z0-9])or([^A-Za-z0-9])"
+		},
+		"pipe-operator": {
+			"name": "keyword.operator.pipe.olang",
+			"match": "\\|>"
+		},
+		"comment": {
+			"name": "comment.line.double-slash.olang",
+			"match": "//(.)*"
+		},
+		"types": {
+			"name": "entity.name.type.olang",
+			"match": "\\b(int|float|string|list|dict)\\b"
+		},
+		"other-operators": {
+			"name": "keyword.operator.other.olang",
+			"match": "(:|\\.)"
 		}
 	},
 	"scopeName": "source.olang"
