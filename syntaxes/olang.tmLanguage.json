@@ -61,7 +61,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.olang",
-				"match": "\\b(if|while|for|return|let|print|else|fn|lambda|import|struct|typeof)\\b"
+				"match": "\\b(if|while|for|return|let|print|else|fn|lambda|import|struct|typeof|class)\\b"
 			}]
 		},
 		"strings": {
