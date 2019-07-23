@@ -129,7 +129,7 @@
 		},
 		"comment": {
 			"name": "comment.line.double-slash.olang",
-			"match": "//(.)*"
+			"match": "(\\s*)//(.)*"
 		},
 		"types": {
 			"name": "entity.name.type.olang",
